@@ -8,7 +8,21 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    <ul class="gallery">
+      <!-- Список <li> с карточками изображений -->
+    </ul>
+
+    <button type="button" data-action="load-more">Load more</button><!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/example.html"></include>
   </body>
 </html>
